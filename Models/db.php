@@ -17,9 +17,9 @@ class Movie
     function get_movies()
     {
 
-        return $this->name;
-        return $this->genre;
-        return $this->year;
-        return $this->movieLength;
+        return 'Title: ' . $this->name . '<br>' .
+            'Genre: ' . $this->genre . '<br>' .
+            'Year: ' . $this->year . '<br>' .
+            'Duration: ' . $this->movieLength . '<br>';
     }
 }

@@ -9,5 +9,12 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
 
 require __DIR__ . '/Models/db.php';
 
-$wednesday = new Movie('Wednesday', 'Horror Comedy', 2022, '8 Episodes');
-var_dump($wednesday);
+$FirstMovie = new Movie('The Lord Of The Rings: The Fellowship Of The Ring', 'Fantasy', 2001, '228 min');
+$SecondMovie = new Movie('Wednesday', 'Horror Comedy', 2022, '8 Episodes');
+$ThirdMovie = new Movie('The Big Lebowski', 'Comedy', 1998, '117 min');
+
+echo $FirstMovie->get_movies();
+echo ('<br>');
+echo $SecondMovie->get_movies();
+echo ('<br>');
+echo $ThirdMovie->get_movies();
